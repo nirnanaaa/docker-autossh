@@ -15,7 +15,7 @@ echo autossh \
  -o ServerAliveCountMax=1 \
  -t -t \
  -i /id_rsa \
- -L ${SSH_TUNNEL_REMOTE}:${SSH_TUNNEL_HOST}:${SSH_TUNNEL_LOCAL} \
+ -L ${SSH_TUNNEL_HOST}:${SSH_TUNNEL_REMOTE}:${SSH_TUNNEL_HOST}:${SSH_TUNNEL_LOCAL} \
  -p ${SSH_HOSTPORT:=22} \
  ${SSH_HOSTUSER}@${SSH_HOSTNAME}
 
